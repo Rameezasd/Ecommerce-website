@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-Commerce Site</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+   <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My E-Commerce Site</h1>
+            
+                        <div class="search-container">
+                            <i class="fa fa-search"></i>
+                            <input type="text" id="search" name="search" placeholder="Search...">
+                        </div>
+            <nav>
+                <ul>
+                <li><a href="#" class="btn"><i class="fa fa-user"></i> Your Account</a></li>
+                <li><a href="#" class="btn"><i class="fa fa-list-alt"></i> Whitelist</a></li>
+                <li><a href="#" class="btn"><i class="fa fa-shopping-cart"></i></a></li>
+                </ul>
+               
+        </nav>
+        
+        </div>
+        <div class="primary-menu">
+         <nav>
+         <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>   
+        </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="products">
+            <div class="container">
+            <!-- Filter Section -->
+        <div class="filters">
+          
+            <select id="category">
+                <option value="">Default</option>
+                <option value="electronics">Electronics</option>
+                <option value="clothing">Clothing</option>
+                <option value="books">Books</option>
+            </select>
+        </div>
+                
+                 <!-- Products Section -->
+        <div id="product-list" class="product-list">
+            <!-- Products are listed here -->
+            <div class="product" data-category="electronics" data-id="1">
+                <img src="https://via.placeholder.com/500" alt="Smartphone">
+             <div class="sider">
+             <div class="leftside">
+             <h5>Laptop</h5>
+             <p>$10.00</p>  
+            </div>
+            <div class="rightside">
+            <button onclick="addToCart('Product 1', 10.00)">+</button>
+            </div>
+            </div>
+            </div>
+            <div class="product" data-category="electronics" data-id="2">
+                <img src="https://via.placeholder.com/500" alt="Laptop">
+                <div class="sider">
+                <div class="leftside">
+                <h5>Laptop</h5>
+                <p>$10.00</p>
+            </div>
+            <div class="rightside">
+            <button onclick="addToCart('Product 1', 10.00)">+</button>
+            </div>
+            </div>
+            </div>
+            <div class="product" data-category="clothing" data-id="3">
+                <img src="https://via.placeholder.com/500" alt="T-Shirt">
+            <div class="sider">    
+                <div class="leftside">
+                <h5>T-Shirt</h5>
+                <p>$15.00</p>
+            </div>
+            <div class="rightside">
+            <button onclick="addToCart('Product 1', 10.00)">+</button>
+            </div>
+            </div>
+            </div>
+            <div class="product" data-category="clothing" data-id="4">
+                <img src="https://via.placeholder.com/500" alt="Jeans">
+            <div class="sider">    
+            <div class="leftside">
+                <h5>Jeans</h5>
+                <p>$20.00</p>
+            </div>
+            <div class="rightside">
+            <button onclick="addToCart('Product 1', 10.00)">+</button>
+            </div>
+            </div>
+            </div>
+            <div class="product" data-category="books" data-id="5">
+                <img src="https://via.placeholder.com/500" alt="Book A">
+            <div class="sider">    
+            <div class="leftside">
+                <h5>Book A</h5>
+                <p>$25.00</p>
+            </div>
+            <div class="rightside">
+            <button onclick="addToCart('Product 1', 10.00)">+</button>
+            </div>
+            </div>
+            </div>
+            <div class="product" data-category="books" data-id="6">
+                <img src="https://via.placeholder.com/500" alt="Book B">
+             <div class="sider">  
+             <div class="leftside">
+                <h5>Book B</h5>
+                <p>$30.00</p>
+            </div>
+             <div class="rightside">
+             <button onclick="addToCart('Product 1', 10.00)">+</button>
+            </div>
+            </div>
+            </div>
+            <!-- Add more products as needed -->
+        </div>
+
+        <!-- Pagination Section -->
+        <div id="pagination" class="pagination">
+            <!-- Pagination buttons will be dynamically inserted here -->
+        </div>
+    </div>
+
+                
+            </div>
+        </section>
+    </main>
+     <div class="deals">
+     <div class="otherproducts">
+                <img src="https://via.placeholder.com/500" alt="Book B">
+                <h3>Save up to 50% on Flower Deals</h3>
+                <p>$30.00</p>
+             <button onclick="addToCart('Product 1', 10.00)">SHOP NOW</button>
+            </div>
+    <div class="otherproducts">
+                <img src="https://via.placeholder.com/500" alt="Book B">
+                <h3>Flowers for Special Movements</h3>
+                <p>$30.00</p>
+             <button onclick="addToCart('Product 1', 10.00)">SHOP NOW</button>
+            </div>
+    </div>
+     <section id="FAQs">
+     <div class="sidecontent">
+     <h1>Frequently Ask Questions</h1>
+     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+     </div>
+     <div class="questions">
+     <div class="question1">
+     <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5>
+     <button class="toggle-btn1">+</button>
+            <div class="more-info">
+                    <p>Additional details about Product 2.</p>
+                </div>    
+    </div>
+    
+    <div class="question2">
+    <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5>
+    <button class="toggle-btn2">+</button>
+       <div class="more-info2">
+                    <p>Additional details about Product 2.</p>
+                </div>         
+    </div>
+    
+    <div class="question3">
+    <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5>
+    <button class="toggle-btn3">+</button>
+       <div class="more-info3">
+                    <p>Additional details about Product 2.</p>
+                </div>        
+    </div>
+     
+    <div class="question4">
+    <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5>
+    <button class="toggle-btn4">+</button>
+           <div class="more-info4">
+                    <p>Additional details about Product 2.</p>
+                </div>    
+    </div>
+     
+    </div>
+    </section>
+    <div class="setdivider">
+        <div class="box left">
+        <h3>Lorem Ipsum</h3>    
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <div class="divider"></div>
+        <div class="box right">
+        <h3>Lorem Ipsum</h3>    
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+    </div>
+    <div class="columns">
+        <div class="column">
+            <div class="icon">
+                <img src="path/to/icon1.png" alt="Icon 1">
+            </div>
+            <div class="content">
+                <h5>Heading 1</h5>
+                <p>Some text for the first column.</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="icon">
+                <img src="path/to/icon2.png" alt="Icon 2">
+            </div>
+            <div class="content">
+                <h5>Heading 2</h5>
+                <p>Some text for the second column.</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="icon">
+                <img src="path/to/icon3.png" alt="Icon 3">
+            </div>
+            <div class="content">
+                <h5>Heading 3</h5>
+                <p>Some text for the third column.</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="icon">
+                <img src="path/to/icon4.png" alt="Icon 4">
+            </div>
+            <div class="content">
+                <h5>Heading 4</h5>
+                <p>Some text for the fourth column.</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+         <hr class="horizontaldivider1">
+
+         <div class="footer-container">
+         <div class="logo">
+         <h3>My E-Commerce Website</h3>
+         <p>Postal Address</p>
+         <p>Phone Number</p>
+         <p>Email</p>
+         </div>
+            <div class="footer-menus">
+                <h3>SHOP</h3>
+                <ul>
+                    <li><a href="#">Subitem</a></li>
+                    <li><a href="#">Subitem</a></li>
+                    <li><a href="#">Subitem</a></li>
+                    <li><a href="#">Subitem</a></li>
+                </ul>
+            </div>
+            <div class="footer-menus">
+                <h3>OCCASSION</h3>
+                <ul>
+                    <li><a href="#">Subitem</a></li>
+                    <li><a href="#">Subitem</a></li>
+                    <li><a href="#">Subitem</a></li>
+                    <li><a href="#">Subitem</a></li>
+                </ul>
+            </div>
+            <div class="footer-menus">
+                <h3>SERVICES</h3>
+                <ul>
+                    <li><a href="#">Subitem</a></li>
+                    <li><a href="#">Subitem</a></li>
+                    <li><a href="#">Subitem</a></li>
+                     <li><a href="#">Subitem</a></li>
+                </ul>
+            </div>
+            <div class="footer-menus">
+                <h3>CUSTOMER SERVICE</h3>
+                <ul>
+                    <li><a href="#">Subitem</a></li>
+                    <li><a href="#">Subitem</a></li>
+                    <li><a href="#">Subitem</a></li>
+                    <li><a href="#">Subitem</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="horizontaldivider2">
+        <div class="copyright">
+            <p>&copy; 2024 My E-Commerce Site</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

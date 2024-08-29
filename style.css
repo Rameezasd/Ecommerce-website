@@ -1,0 +1,404 @@
+
+.filters {
+    text-align: right;
+    margin: 5%;
+    
+}
+
+#category {
+
+background-color: white;
+border: 1px solid black;
+width: 12%;
+
+}
+
+header {
+    background: white;
+    color: black;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+}
+.search-container {
+width: 20%;
+
+}
+.search-container input {
+height: 25px;
+padding-left: 15px;
+padding-right: 50px;
+border-radius: 20px;
+border: 1px solid black;
+}
+header .container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+.primary-menu nav{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    line-height: 100px;
+    position: relative;
+    left: 40%;
+}
+
+
+.primary-menu li {
+    margin: 0 15px;
+}
+
+.primary-menu a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1em;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em 0;
+}
+
+.products {
+    background: #fff;
+    padding: 2em 0;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    gap: 1em; /* Space between items */
+    padding: 0 2em; /* Optional padding for alignment */
+}
+
+.product {
+    border: 1px solid #ddd;
+    
+    text-align: center;
+    background: #fff;
+}
+
+.product h5 {
+    text-align: left;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.product p {
+    text-align: left;
+}
+
+.product img {
+    max-width: 100%;
+    background-size: cover;
+}
+
+.sider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 97%;    
+    padding: 1.5%;
+    background-color: white; /* Optional: Add background color */
+    top: 0;
+}
+
+button {
+    background: white;
+    color: black;
+    font-weight: 800;
+    padding: 14px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    font-weight: 800;
+}
+
+button:hover {
+    background: #555;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    margin: 0 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.pagination button.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+.deals {
+display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 250px;
+}
+.otherproducts button {
+border: 1px solid black;
+border-radius: 20px;
+font-size: 12px;
+padding: 8px 25px;
+}
+
+
+
+#FAQs {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    
+}
+.sidecontent {
+width: 50%;
+
+}
+
+.sidecontent p {
+width: 75%;
+}
+
+.questions {
+width: 50%;
+
+}
+.question1 {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+width: 95%;
+margin-bottom: 50px;
+}
+
+.question2 {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+width: 95%;
+margin-bottom: 50px;
+}
+
+.question3 {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+width: 95%;
+margin-bottom: 50px;
+}
+
+.question4 {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+width: 95%;
+margin-bottom: 50px;
+}
+.questions button {
+border: 1px solid lightgrey;
+background: lightgrey;
+border-radius: 50%;
+padding: 14px;
+
+}
+
+.toggle-btn1, .toggle-btn2, .toggle-btn3, .toggle-btn4 {
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.more-info {
+    display: none;
+    margin-top: 10px;
+}
+
+.more-info p {
+    margin: 0;
+    color: black;
+    
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates 3 equal columns */
+    gap: 1em; /* Space between items */
+    padding: 0 2em; /* Optional padding for alignment */
+    width: 100%;
+    margin-top: 100px;
+}
+
+.column {
+    background: white;
+    
+    
+    width: 75%; /* Adjust as needed to fit four columns */
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+    padding: 15px;
+}
+
+.icon {
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+.icon img {
+    width: 50px; /* Adjust size of icons */
+    
+}
+
+.content {
+    flex: 1;
+}
+
+.content h5 {
+    margin: 0 0 10px;
+    font-size: 15px;
+}
+
+.content p {
+    margin: 0;
+    color: #666;
+    font-size: 12px;
+}
+.setdivider {
+    display: flex;
+    
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 90%;
+    margin: auto;
+    background-color: lightgrey;
+}
+
+.box {
+    background-color: lightgrey;
+    width: 100%;
+    
+    padding: 20px;
+    
+    
+}
+
+.divider {
+    width: 1px;
+    background-color: black;
+    height: 250px; /* Adjust height as needed */
+    margin: 20px 20px; /* Adjust margin to control spacing between boxes and the line */
+}
+footer {
+    background-color: white;
+    color: white;
+    padding: 20px 0;
+}
+
+.horizontaldivider1 {
+    border: 0;
+    height: 1px;
+    background-color: #ccc; /* Line color */
+    margin: 20px 0; /* Space above and below the line */
+}
+
+.logo {
+color: black;
+width: 75%;
+}
+.horizontaldivider2 {
+    border: 0;
+    height: 1px;
+    background-color: #ccc; /* Line color */
+    margin: 20px 0; /* Space above and below the line */
+}
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+}
+
+.footer-menus {
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    width: 20%;
+    height: 250px;
+}
+
+.footer-menus h3 {
+margin-bottom: 25px;
+text-decoration: none;
+color: black;
+
+}
+
+.footer-menus ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-menus ul li {
+    margin-bottom: 10px;
+}
+
+.footer-menus ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-menus ul li a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+color: black;
+}
